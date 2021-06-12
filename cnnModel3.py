@@ -18,6 +18,7 @@ from efficientnet.tfkeras import EfficientNetB7
 '''
 from PIL import Image
 import torch
+import torch.nn.functional as F
 import torch.nn as nn
 from math import ceil
 import torchvision.transforms as transforms
