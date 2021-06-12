@@ -200,15 +200,15 @@ def train_model():
     return Nones
 
 
-@app.route('/go_to_test', methods=['GET'])
-def index1():
+#@app.route('/go_to_test', methods=['GET'])
+#def index1():
     # Main page
-    return render_template('index1.html')
+ #   return render_template('index1.html')
 
-@app.route('/go_to_train', methods=['GET'])
-def index2():
+#@app.route('/go_to_train', methods=['GET'])
+#def index2():
     # Main page
-    return render_template('index2.html')
+ #   return render_template('index2.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
