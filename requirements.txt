@@ -1,9 +1,8 @@
+-f https://download.pytorch.org/whl/torch_stable.html
 Flask==1.1.2
 numpy==1.19.2
 pandas==1.1.5
 Werkzeug==1.0.1
-torch==1.8.1+cpu 
-torchvision==0.9.1+cpu
 gunicorn==20.1.0
 gevent==20.6.2
 pillow==8.0.1
