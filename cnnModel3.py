@@ -6,8 +6,8 @@ import glob
 import re
 import numpy as np
 from EfModel import EfficientNet,SqueezeExcitation,MBConv,Swish,Flatten
-import DoTest
-import trainModel
+#import DoTest
+#import trainModel
 import pandas as pd
 # Keras
 '''
@@ -127,7 +127,7 @@ def upload():
         return str(preds)
     return Nones
 
-@app.route('/predict1', methods=['GET', 'POST'])
+'''@app.route('/predict1', methods=['GET', 'POST'])
 def testresult():
     if request.method == 'POST':
         # Get the file from post request
@@ -163,11 +163,11 @@ def testresult():
         #pred_class = decode_predictions(preds, top=1)   # ImageNet Decode
         #result = str(pred_class[0][0][1])               # Convert to string
 
-    return Nones
+    return Nones'''
 
 
 
-@app.route('/predict2', methods=['GET', 'POST'])
+'''@app.route('/predict2', methods=['GET', 'POST'])
 def train_model():
     if request.method == 'POST':
         # Get the file from post request
@@ -197,7 +197,7 @@ def train_model():
         #pred_class = decode_predictions(preds, top=1)   # ImageNet Decode
         #result = str(pred_class[0][0][1])               # Convert to string
         return "Training finished "
-    return Nones
+    return Nones'''
 
 
 #@app.route('/go_to_test', methods=['GET'])
