@@ -1,1 +1,1 @@
-web: gunicorn cnnModel3:app
+web: gunicorn app:app
