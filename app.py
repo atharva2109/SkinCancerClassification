@@ -324,8 +324,10 @@ def upload():
         f.save(file_path)
 
         # Make prediction
-        preds = model_predict_e(file_path, model)
-
+        try:
+             preds = model_predict_e(file_path, model)
+        except:
+            return "Select proper image"
         # Process your result for human
         # pred_class = preds.argmax(axis=-1)            # Simple argmax
         #pred_class = decode_predictions(preds, top=1)   # ImageNet Decode
